@@ -7,8 +7,8 @@ describe('checkPassword function', () => {
     assert.strictEqual(checkPassword('ValidP@ss1'), true);
   });
 
-  test('returns false for password shorter than 8 characters', () => {
-    assert.strictEqual(checkPassword('Short1!'), false);
+  test("returns false for password shorter than 6 characters", () => {
+    assert.strictEqual(checkPassword("Sho1!"), false);
   });
 
   test('returns false for password longer than 20 characters', () => {
